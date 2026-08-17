@@ -166,26 +166,25 @@
 
 <script>
 const tasks = [
-  {id:1, name:"Kickoff & Project Charter", cat:"Foundation", owner:"Teo (Web & Multimedia Coordinator)", start:"2026-07-20", end:"2026-07-24", notes:"Confirm scope, roles, comms plan for FinalSite -> WIX migration."},
-  {id:2, name:"Learn WIX Platform (self-training)", cat:"Foundation", owner:"Teo (Web & Multimedia Coordinator)", start:"2026-07-27", end:"2026-08-21", notes:"WIX Studio/Editor training, ADI, CMS/collections, permissions model."},
-  {id:3, name:"Design Stakeholder Feedback Survey", cat:"Discovery", owner:"Teo (Web & Multimedia Coordinator)", start:"2026-07-27", end:"2026-07-31", notes:"Draft IA-focused survey questions per persona."},
-  {id:4, name:"Distribute Survey & Collect Responses", cat:"Discovery", owner:"Teo (Web & Multimedia Coordinator)", start:"2026-08-03", end:"2026-08-21", notes:"Send to student, parent, staff respondents."},
-  {id:5, name:"Analyze Survey Results", cat:"Discovery", owner:"Teo (Web & Multimedia Coordinator)", start:"2026-08-24", end:"2026-08-28", notes:"Synthesize themes to brief the IA exercise."},
-  {id:6, name:"Convert Board Policy Docs to Web Pages (AI)", cat:"Content Prep", owner:"Teo (Web & Multimedia Coordinator) / Webmaster", start:"2026-08-03", end:"2026-10-09", notes:"Structure policy text into a database for WIX import; parallel track."},
-  {id:7, name:"IA/UX Exercise with Directors", cat:"Discovery", owner:"Teo (Web & Multimedia Coordinator)", start:"2026-08-31", end:"2026-09-04", notes:"Card sort + persona journey mapping."},
-  {id:8, name:"IA/UX Exercise with Webmasters", cat:"Discovery", owner:"Teo (Web & Multimedia Coordinator) / Webmasters", start:"2026-09-07", end:"2026-09-11", notes:"Reconcile with directors' output."},
-  {id:9, name:"Finalize Sitemap & Information Architecture", cat:"Design", owner:"Teo (Web & Multimedia Coordinator)", start:"2026-09-14", end:"2026-09-18", notes:"Lock nav labels, structure for all 13 schools."},
-  {id:10, name:"Design & Build District Site + School Template", cat:"Design", owner:"Teo (Web & Multimedia Coordinator) / Designer", start:"2026-09-21", end:"2026-10-09", notes:"Single WIX template reused across all 13 school sites."},
-  {id:11, name:"Design Review & Sign-off", cat:"Design", owner:"Teo (Web & Multimedia Coordinator) / Cabinet", start:"2026-10-12", end:"2026-10-13", notes:"Approval before training begins."},
-  {id:12, name:"Webmaster Training: Platform + Accessibility Basics", cat:"Training", owner:"Teo (Web & Multimedia Coordinator)", start:"2026-10-14", end:"2026-10-16", notes:"Train all 13 school webmasters together."},
-  {id:13, name:"Webmaster Content Migration (2026-27 essentials only)", cat:"Migration", owner:"Webmasters (13 schools)", start:"2026-10-19", end:"2027-02-19", notes:"4-month window. Only content needed to finish 2026-27."},
-  {id:14, name:"ADA/Accessibility Coaching & Rolling Audits", cat:"Accessibility", owner:"Teo (Web & Multimedia Coordinator) / Webmasters", start:"2026-10-19", end:"2027-04-23", notes:"Ongoing spot-checks so content is built accessibly from the start."},
-  {id:15, name:"Final QA & Pre-Launch Testing", cat:"Launch", owner:"Teo (Web & Multimedia Coordinator) / Webmasters", start:"2027-02-22", end:"2027-02-26", notes:"Cross-browser/device check, link audit, redirect mapping."},
-  {id:16, name:"Website Launch (District + 13 Schools)", cat:"Launch", owner:"Teo (Web & Multimedia Coordinator)", start:"2027-03-01", end:"2027-03-02", notes:"Go-live milestone.", milestone:true},
-  {id:17, name:"Post-Launch Buffer / Final Edits", cat:"Launch", owner:"Teo (Web & Multimedia Coordinator) / Webmasters", start:"2027-03-02", end:"2027-03-31", notes:"Reserved month for fixes before ADA deadline crunch."},
-  {id:18, name:"Final Accessibility Audit & Remediation Sprint", cat:"Accessibility", owner:"Teo (Web & Multimedia Coordinator) / Webmasters", start:"2027-04-01", end:"2027-04-23", notes:"Formal WCAG 2.1 AA audit + fixes ahead of the DOJ deadline."},
-  {id:19, name:"DOJ ADA Title II Compliance Deadline", cat:"Accessibility", owner:"District", start:"2027-04-26", end:"2027-04-26", notes:"Hard deadline for public entities serving 50k+ population.", milestone:true},
-  {id:20, name:"Phase 2 Content Additions (2027-28 prep)", cat:"Post-Launch", owner:"Webmasters", start:"2027-04-27", end:"2027-06-30", notes:"Add remaining/non-essential content deferred during migration."},
+  {id:1, name:"Kickoff & Project Charter", cat:"Foundation", owner:"Teo (Web & Multimedia Coordinator)", start:"2026-08-12", end:"2026-08-13", notes:"Confirm scope, roles, comms plan for FinalSite -> WIX migration."},
+  {id:2, name:"WIX Onboarding Meeting (WIX Team)", cat:"Foundation", owner:"Teo (Web & Multimedia Coordinator)", start:"2026-08-19", end:"2026-08-19", notes:"Kickoff call with the WIX onboarding team, Wed 8/19 at 11:00 AM.", milestone:true},
+  {id:3, name:"Learn WIX Platform (self-training)", cat:"Foundation", owner:"Teo (Web & Multimedia Coordinator)", start:"2026-08-12", end:"2026-09-11", notes:"WIX Studio/Editor training, ADI, CMS/collections, permissions model. Spans the onboarding meeting."},
+  {id:4, name:"Finalize & Distribute Stakeholder Survey", cat:"Discovery", owner:"Teo (Web & Multimedia Coordinator)", start:"2026-08-14", end:"2026-09-02", notes:"Survey questions already drafted; finalize, send, and collect responses."},
+  {id:5, name:"Analyze Survey Results", cat:"Discovery", owner:"Teo (Web & Multimedia Coordinator)", start:"2026-09-03", end:"2026-09-04", notes:"Synthesize themes to brief the IA/UX workshop."},
+  {id:6, name:"Convert Board Policy Docs to Web Pages (AI)", cat:"Content Prep", owner:"Teo (Web & Multimedia Coordinator) / Webmaster", start:"2026-08-17", end:"2026-10-09", notes:"Structure policy text into a database for WIX import; parallel track."},
+  {id:7, name:"IA/UX Workshop (select group)", cat:"Discovery", owner:"Teo (Web & Multimedia Coordinator) / Select Group", start:"2026-09-08", end:"2026-09-11", notes:"Card sort + persona journey mapping with a small, select group of site leaders and webmasters."},
+  {id:8, name:"Finalize Sitemap & Information Architecture", cat:"Design", owner:"Teo (Web & Multimedia Coordinator)", start:"2026-09-14", end:"2026-09-18", notes:"Lock nav labels, structure for all 13 schools."},
+  {id:9, name:"Design & Build District Site + School Template", cat:"Design", owner:"Teo (Web & Multimedia Coordinator) / Designer", start:"2026-09-21", end:"2026-10-09", notes:"Single WIX template reused across all 13 school sites."},
+  {id:10, name:"Design Review & Sign-off", cat:"Design", owner:"Teo (Web & Multimedia Coordinator) / Cabinet", start:"2026-10-12", end:"2026-10-13", notes:"Approval before training begins."},
+  {id:11, name:"Webmaster Training: Platform + Accessibility Basics", cat:"Training", owner:"Teo (Web & Multimedia Coordinator)", start:"2026-10-14", end:"2026-10-16", notes:"Train all 13 school webmasters together."},
+  {id:12, name:"Webmaster Content Migration (2026-27 essentials only)", cat:"Migration", owner:"Webmasters (13 schools)", start:"2026-10-19", end:"2027-02-19", notes:"4-month window. Only content needed to finish 2026-27."},
+  {id:13, name:"ADA/Accessibility Coaching & Rolling Audits", cat:"Accessibility", owner:"Teo (Web & Multimedia Coordinator) / Webmasters", start:"2026-10-19", end:"2027-04-23", notes:"Ongoing spot-checks so content is built accessibly from the start."},
+  {id:14, name:"Final QA & Pre-Launch Testing", cat:"Launch", owner:"Teo (Web & Multimedia Coordinator) / Webmasters", start:"2027-02-22", end:"2027-02-26", notes:"Cross-browser/device check, link audit, redirect mapping."},
+  {id:15, name:"Website Launch (District + 13 Schools)", cat:"Launch", owner:"Teo (Web & Multimedia Coordinator)", start:"2027-03-01", end:"2027-03-02", notes:"Go-live milestone. Fixed launch date.", milestone:true},
+  {id:16, name:"Post-Launch Buffer / Final Edits", cat:"Launch", owner:"Teo (Web & Multimedia Coordinator) / Webmasters", start:"2027-03-02", end:"2027-03-31", notes:"Reserved month for fixes before ADA deadline crunch."},
+  {id:17, name:"Final Accessibility Audit & Remediation Sprint", cat:"Accessibility", owner:"Teo (Web & Multimedia Coordinator) / Webmasters", start:"2027-04-01", end:"2027-04-23", notes:"Formal WCAG 2.1 AA audit + fixes ahead of the DOJ deadline."},
+  {id:18, name:"DOJ ADA Title II Compliance Deadline", cat:"Accessibility", owner:"District", start:"2027-04-26", end:"2027-04-26", notes:"Hard deadline for public entities serving 50k+ population.", milestone:true},
+  {id:19, name:"Phase 2 Content Additions (2027-28 prep)", cat:"Post-Launch", owner:"Webmasters", start:"2027-04-27", end:"2027-06-30", notes:"Add remaining/non-essential content deferred during migration."},
 ];
 
 const CATEGORY_COLORS = {
@@ -200,7 +199,7 @@ const CATEGORY_COLORS = {
   "Post-Launch":   "#D9D2E9",
 };
 
-const PROJECT_START = new Date("2026-07-01T00:00:00");
+const PROJECT_START = new Date("2026-08-01T00:00:00");
 const PROJECT_END   = new Date("2027-07-01T00:00:00");
 const totalMs = PROJECT_END - PROJECT_START;
 
